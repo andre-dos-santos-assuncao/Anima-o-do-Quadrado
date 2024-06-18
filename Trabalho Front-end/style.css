@@ -1,0 +1,30 @@
+
+.content {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    animation: anim 4s;
+    animation-iteration-count: 4;
+}
+
+@keyframes anim {
+    0%{
+        background-color: blue;
+        transform: translateX(0);
+    }
+
+    25%{
+        background-color: red;
+        transform: translateX(1800px);
+    }
+
+    50%{
+        background-color: green;
+        transform: translateX(1800px) translateY(800px);
+    }
+
+    75%{
+        background-color: yellow;
+        transform: translateY(800px) translateZ(1800px);
+    }
+}
